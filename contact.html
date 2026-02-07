@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | RoyalPeak Financial</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">ROYALPEAK</div>
+  <div class="menu-toggle" id="mobile-menu">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="loans.html">Loans</a></li>
+    <li><a href="compliance.html">Compliance</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="contact.html" class="apply-btn apply-btn-mobile">Apply Now</a></li>
+  </ul>
+  <a href="contact.html" class="apply-btn">Apply Now</a>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p>Get in touch with our experts today for personalized financial solutions.</p>
+    </div>
+
+    <div class="contact-wrapper" style="display: grid; grid-template-columns: 1fr; gap: 40px;">
+      <form onsubmit="sendWhatsApp(event)" style="width: 100%;">
+        <h3 style="margin-bottom: 25px; color: var(--dark); font-size: 1.5rem;">Quick Enquiry</h3>
+        <div class="form-group">
+          <input id="name" type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input id="phone" type="tel" placeholder="Mobile Number" required>
+        </div>
+        <div class="form-group">
+          <select id="service" required>
+            <option value="">Select Service</option>
+            <option>Home Loan</option>
+            <option>Business Loan</option>
+            <option>Personal Loan</option>
+            <option>GST / IT Services</option>
+            <option>Company Setup</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="4" placeholder="Your Message (Optional)"></textarea>
+        </div>
+        <button type="submit" class="primary-btn" style="max-width: 100%;">Send via WhatsApp</button>
+      </form>
+
+      <div class="contact-info" style="background: var(--light); border-radius: 20px; box-shadow: var(--shadow);">
+        <h3 style="margin-bottom: 25px; color: var(--dark); font-size: 1.5rem;">Office Details</h3>
+        <div class="info-item" style="display: flex; align-items: flex-start; margin-bottom: 25px;">
+          <i class="fa-solid fa-location-dot" style="color: var(--primary); font-size: 1.2rem; margin-top: 5px; margin-right: 15px;"></i>
+          <p style="color: #555; font-size: 1rem; line-height: 1.6;">
+            D.No: 12-4-74, Flat No:201, 2nd Floor, S.J. Towers, Anantapuramu-515001.
+          </p>
+        </div>
+        <div class="info-item" style="display: flex; align-items: center; margin-bottom: 25px;">
+          <i class="fa-solid fa-phone" style="color: var(--primary); font-size: 1.2rem; margin-right: 15px;"></i>
+          <p style="color: #555; font-size: 1rem;">+91 888 60 26 100</p>
+        </div>
+        <div class="info-item" style="display: flex; align-items: center; margin-bottom: 35px;">
+          <i class="fa-solid fa-envelope" style="color: var(--primary); font-size: 1.2rem; margin-right: 15px;"></i>
+          <p class="email-link" style="color: #555; font-size: 1rem;">royalpeakfinservicespvtltd999@gmail.com</p>
+        </div>
+        
+        <h4 style="margin-bottom: 20px; color: var(--dark);">Follow Us</h4>
+        <div class="social-links" style="justify-content: flex-start; gap: 15px;">
+          <a href="#" style="background: var(--primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s;">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#" style="background: var(--primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s;">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" style="background: var(--primary); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; transition: 0.3s;">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+@media (min-width: 992px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr 1fr !important;
+    align-items: start;
+  }
+}
+</style>
+
+<footer class="premium-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">RoyalPeak</span>
+        <p>Professional Financial, Loans & Compliance Services. Empowering your dreams with secure, single-window access to 90+ lenders.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Our Expertise</h4>
+        <a href="loans.html">Housing & Personal Loans</a>
+        <a href="services.html">GST & IT Filing</a>
+        <a href="services.html">Company Incorporation</a>
+        <a href="services.html">MSME & Labour Reg</a>
+        <a href="services.html">Accounting & Tally</a>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Contact Us</h4>
+        <p><i class="fa-solid fa-location-dot"></i> 
+          D.No: 12-4-74, Flat No:201, 2nd Floor, S.J. Towers, Anantapuramu-515001.
+        </p>
+        <p><i class="fa-solid fa-phone"></i> 
+          888 60 26 100
+        </p>
+        <p><i class="fa-solid fa-envelope"></i> 
+          royalpeakfinservicespvtltd999@gmail.com
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 RoyalPeak Financial Services Pvt. Ltd. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/918886026100" class="whatsapp-float" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<script>
+function sendWhatsApp(e){
+  e.preventDefault();
+  const name=document.getElementById("name").value;
+  const phone=document.getElementById("phone").value;
+  const service=document.getElementById("service").value;
+  const message=document.getElementById("message").value;
+  const msg=`Hello RoyalPeak,%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0AMessage: ${message}`;
+  window.open(`https://wa.me/918886026100?text=${msg}`,"_blank");
+}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
